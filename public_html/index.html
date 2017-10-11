@@ -13,6 +13,7 @@
         <![endif]-->
     </head>
     <body>
+        <script src="js/facebook.js"></script>
         <div class="container"  id="login-container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3" id="login-form-container">
@@ -93,17 +94,14 @@
                                 Choose a password with 6 or more alphanumeric characters (i.e. a-z, A-Z, 0-9) and/or special characters (e.g. !@#%&*^~)
                             </div>
                         </div>
-                        <div class="checkbox" id="facebook_group">
-                            <label>
-                                <input type="checkbox" id="signup-connect"> Agree To Connect To Facebook
-                            </label>
+                        <div class="form-group" id="facebook_group">
+                            <div class="fb-login-button" data-width="50px" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true" onlogin="signupSubmit();"></div>
                             <div class="alert alert-danger" role="alert" id="alert-signup-connect-invalid">
                                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                                 <span class="sr-only">Error:</span>
                                 Please agree to connect.
                             </div>
                         </div>
-                        <button type="submit" class="btn-lg btn-primary">Create</button>
                     </form>
                 </div> 
             </div>

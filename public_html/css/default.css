@@ -27,7 +27,7 @@ span {
     border-radius: 10px;
     min-width: 250px;
     min-height: 320px;
-    background: linear-gradient(to bottom, #33cccc 0%, #99ffcc 100%);
+    background: #cccccc;
     color: #003333;
 }
 
